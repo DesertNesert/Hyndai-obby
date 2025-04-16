@@ -1,0 +1,24 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local Window = Library:NewWindow("обби")
+ 
+local Section = Window:NewSection("изменения")
+
+Section:CreateButton("увеличить скорость ", function() 
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
+end)
+
+local Section =
+Window:NewSection("тп к батарейкам") 
+
+Section:CreateButton("тп к батарейке", function()
+game.Players.LocalPlayer.Character:PivotTo(CFrame.new(Vector3.new(-515, -190, 856)))
+end) 
+
+Section:CreateButton("тп к батарейке", function() 
+game.Players.LocalPlayer.Character:PivotTo(CFrame.new(Vector3.new(-416, -190, 973))) 
+end) 
+
+Section:CreateButton("тп к батарейке", function()
+game.Players.LocalPlayer.Character:PivotTo(CFrame.new(Vector3.new(-417, -190, 854)))
+end)
